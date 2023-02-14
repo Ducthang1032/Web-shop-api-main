@@ -1,4 +1,4 @@
-package com.example.registry;
+package com.web.shop.api.registry;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
