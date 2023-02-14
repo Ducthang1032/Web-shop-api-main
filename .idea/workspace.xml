@@ -4,27 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d002d730-b93c-47d0-85a9-bfab189061a8" name="Changes" comment="Add module registry Eureka server">
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/GatewayLog.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/config/FilterConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/config/GatewayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/dto/TokenInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/filter/AuthenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/filter/PostRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/filter/PreRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/test/java/com/example/gateway/GatewayApplicationTests.java" afterDir="false" />
+    <list default="true" id="d002d730-b93c-47d0-85a9-bfab189061a8" name="Changes" comment="Add module gateway Eureka client">
+      <change afterPath="$PROJECT_DIR$/ndt-registry/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/GatewayLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/GatewayLog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-registry/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-registry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-registry/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/eco0682-thangnd/Desktop/Web-shop-api-main/ndt-registry/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +63,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ndt-registry/src/main/resources" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -83,7 +75,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.RegistryApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Web-shop-api-main" />
       <method v="2">
@@ -104,20 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistryApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="registry" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.web.shop.api.registry.RegistryApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.web.shop.api.registry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistryApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="ndt-registry" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.web.shop.api.registry.RegistryApplication" />
       <extension name="coverage">
@@ -130,24 +109,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="registry" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.registry.RegistryApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebShopApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Web-Shop-API" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.web.shop.api.Web.Shop.API.WebShopApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.RegistryApplication (2)" />
-        <item itemvalue="Spring Boot.RegistryApplication (1)" />
+        <item itemvalue="Spring Boot.RegistryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676344826257</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add module gateway Eureka client">
+      <created>1676358748292</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676358748292</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +190,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add maven" />
     <MESSAGE value="Add module registry Eureka server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add module registry Eureka server" />
+    <MESSAGE value="Add module gateway Eureka client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add module gateway Eureka client" />
   </component>
 </project>

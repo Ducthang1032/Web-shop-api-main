@@ -1,0 +1,8 @@
+${AnsiColor.BRIGHT_BLUE} _____    ______    _____   _____    _____   _______   _____   __     __
+${AnsiColor.BRIGHT_BLUE}|  __ \  |  ____|  / ____| |_   _|  / ____| |__   __| |  __ \  \ \   / /
+${AnsiColor.BRIGHT_BLUE}| |__) | | |__    | |  __    | |   | (___      | |    | |__) |  \ \_/ /
+${AnsiColor.BRIGHT_BLUE}|  _  /  |  __|   | | |_ |   | |    \___ \     | |    |  _  /    \   /
+${AnsiColor.BRIGHT_BLUE}| | \ \  | |____  | |__| |  _| |_   ____) |    | |    | | \ \     | |
+${AnsiColor.BRIGHT_BLUE}|_|  \_\ |______|  \_____| |_____| |_____/     |_|    |_|  \_\    |_|
+${AnsiColor.BRIGHT_BLUE}
+${AnsiColor.BRIGHT_WHITE} Registry - Running Spring Boot ${spring-boot.version}
