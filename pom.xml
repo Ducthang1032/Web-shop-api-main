@@ -9,14 +9,15 @@
         <relativePath/> <!-- lookup parent from repository -->
 
     </parent>
-    <groupId>com.web.shop.api</groupId>
-    <artifactId>Web-Shop-API</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Web-Shop-API</name>
-    <description>API with MicroService</description>
+    <groupId>ndt-api</groupId>
+    <artifactId>ndt-api</artifactId>
+    <packaging>pom</packaging>
+    <version>v1</version>
+    <name>ndt-api</name>
+    <description>NDT api with MicroService</description>
 
     <modules>
-        <module>registry</module>
+        <module>ndt-registry</module>
     </modules>
 
     <dependencies>

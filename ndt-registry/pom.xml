@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>com.web.shop.api</groupId>
-	<artifactId>registry</artifactId>
+	<artifactId>ndt-registry</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>registry</name>
 
