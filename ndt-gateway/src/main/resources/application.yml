@@ -9,9 +9,10 @@ spring:
     username: postgres
     password: Tdt@6868
   redis:
-    host: 10.1.20.169
-    port: 6379
-    prefix-key: 'intern:'
+    host: redis-15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com
+    port: 15714
+    password: usyEK86FiprLOYwtzeNgW405iiY8AK68
+    prefix-key: 'ndt:'
 
 eureka:
   client:
@@ -32,20 +33,17 @@ ribbon:
 zuul:
   ignored-services: "*"
   routes:
-    image-service:
-      path: /image/**
-      service-id: image-service
-    music-service:
-      path: /music/**
-      service-id: music-service
-    employee-service:
-      path: /employee/**
-      service-id: employee-service
+    user-service:
+      path: /user/**
+      service-id: user-service
+    admin-service:
+      path: /admin/**
+      service-id: admin-service
     authenticate-service:
       path: /auth/**
       service-id: authenticate-service
 
 app:
   security:
-    key-secret: INTERN1HIEU
+    key-secret: BB8D76746D8586359AB25E18D5EFB
     expiration-token: 900000 # 15 minutes

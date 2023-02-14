@@ -46,3 +46,239 @@
 2023-02-14 13:28:24,947 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [restartedMain] Resolving eureka endpoints via configuration
 2023-02-14 13:28:25,003 INFO c.n.d.InstanceInfoReplicator:60 [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
 2023-02-14 13:28:25,137 INFO o.s.b.StartupInfoLogger:61 [restartedMain] Started GatewayApplication in 3.223 seconds (JVM running for 3.581)
+2023-02-14 13:33:24,956 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-02-14 13:38:24,957 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-02-14 13:43:24,958 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-02-14 13:48:24,959 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-02-14 13:53:05,567 INFO o.s.b.SpringApplication:651 [restartedMain] No active profile set, falling back to default profiles: default
+2023-02-14 13:53:06,018 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:53:06,024 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:53:06,478 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:53:06,478 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:53:06,480 INFO c.n.c.DynamicPropertyFactory:281 [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2467570c
+2023-02-14 13:53:06,516 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:220 [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-14 13:53:06,714 INFO o.h.j.i.u.LogHelper:31 [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-14 13:53:06,734 INFO o.h.Version:44 [task-1] HHH000412: Hibernate ORM core version 5.4.20.Final
+2023-02-14 13:53:06,779 INFO o.h.a.c.r.j.JavaReflectionManager:49 [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-02-14 13:53:06,824 INFO o.h.d.Dialect:170 [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-14 13:53:06,986 INFO o.h.e.t.j.p.i.JtaPlatformInitiator:52 [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-14 13:53:07,087 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:53:07,087 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:53:07,488 WARN o.s.b.d.a.OptionalLiveReloadServer:61 [restartedMain] Unable to start LiveReload server
+2023-02-14 13:53:07,507 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:108 [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2023-02-14 13:53:07,667 INFO c.n.d.p.DiscoveryJerseyProvider:70 [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2023-02-14 13:53:07,667 INFO c.n.d.p.DiscoveryJerseyProvider:71 [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2023-02-14 13:53:07,727 INFO c.n.d.p.DiscoveryJerseyProvider:80 [restartedMain] Using XML encoding codec XStreamXml
+2023-02-14 13:53:07,727 INFO c.n.d.p.DiscoveryJerseyProvider:81 [restartedMain] Using XML decoding codec XStreamXml
+2023-02-14 13:53:07,798 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [restartedMain] Resolving eureka endpoints via configuration
+2023-02-14 13:53:07,856 INFO c.n.d.InstanceInfoReplicator:60 [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-14 13:53:08,002 INFO o.s.b.StartupInfoLogger:61 [restartedMain] Started GatewayApplication in 3.072 seconds (JVM running for 3.401)
+2023-02-14 13:53:08,905 WARN o.s.b.a.h.AbstractReactiveHealthIndicator:89 [boundedElastic-1] Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com:15714
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:985)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:446)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:99)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com:15714
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440)
+	... 14 common frames omitted
+Caused by: java.net.UnknownHostException: 15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com: Name or service not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1256)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:984)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:504)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2023-02-14 13:54:11,142 INFO o.s.b.SpringApplication:651 [restartedMain] No active profile set, falling back to default profiles: default
+2023-02-14 13:54:11,587 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:54:11,593 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:54:12,041 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:54:12,041 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:54:12,044 INFO c.n.c.DynamicPropertyFactory:281 [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@35a2eca6
+2023-02-14 13:54:12,080 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:220 [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-14 13:54:12,274 INFO o.h.j.i.u.LogHelper:31 [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-14 13:54:12,294 INFO o.h.Version:44 [task-1] HHH000412: Hibernate ORM core version 5.4.20.Final
+2023-02-14 13:54:12,339 INFO o.h.a.c.r.j.JavaReflectionManager:49 [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-02-14 13:54:12,380 INFO o.h.d.Dialect:170 [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-14 13:54:12,544 INFO o.h.e.t.j.p.i.JtaPlatformInitiator:52 [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-14 13:54:12,658 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:54:12,659 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:54:13,055 WARN o.s.b.d.a.OptionalLiveReloadServer:61 [restartedMain] Unable to start LiveReload server
+2023-02-14 13:54:13,065 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:108 [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2023-02-14 13:54:13,219 INFO c.n.d.p.DiscoveryJerseyProvider:70 [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2023-02-14 13:54:13,219 INFO c.n.d.p.DiscoveryJerseyProvider:71 [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2023-02-14 13:54:13,269 INFO c.n.d.p.DiscoveryJerseyProvider:80 [restartedMain] Using XML encoding codec XStreamXml
+2023-02-14 13:54:13,269 INFO c.n.d.p.DiscoveryJerseyProvider:81 [restartedMain] Using XML decoding codec XStreamXml
+2023-02-14 13:54:13,328 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [restartedMain] Resolving eureka endpoints via configuration
+2023-02-14 13:54:13,382 INFO c.n.d.InstanceInfoReplicator:60 [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-14 13:54:13,524 INFO o.s.b.StartupInfoLogger:61 [restartedMain] Started GatewayApplication in 2.952 seconds (JVM running for 3.292)
+2023-02-14 13:54:14,713 WARN o.s.b.a.h.AbstractReactiveHealthIndicator:89 [boundedElastic-1] Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com:15714
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:985)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:446)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:99)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com:15714
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440)
+	... 14 common frames omitted
+Caused by: java.net.UnknownHostException: 15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com: Name or service not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1256)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:984)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:504)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2023-02-14 13:55:01,926 INFO o.s.b.SpringApplication:651 [restartedMain] No active profile set, falling back to default profiles: default
+2023-02-14 13:55:02,351 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:55:02,356 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:55:02,801 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:55:02,801 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:55:02,804 INFO c.n.c.DynamicPropertyFactory:281 [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1176d609
+2023-02-14 13:55:02,840 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:220 [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-14 13:55:03,699 INFO o.h.j.i.u.LogHelper:31 [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-14 13:55:03,717 INFO o.h.Version:44 [task-1] HHH000412: Hibernate ORM core version 5.4.20.Final
+2023-02-14 13:55:03,761 INFO o.h.a.c.r.j.JavaReflectionManager:49 [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-02-14 13:55:03,802 INFO o.h.d.Dialect:170 [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-14 13:55:04,461 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:55:04,461 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:55:04,928 INFO o.h.e.t.j.p.i.JtaPlatformInitiator:52 [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-14 13:55:05,002 WARN o.s.b.d.a.OptionalLiveReloadServer:61 [restartedMain] Unable to start LiveReload server
+2023-02-14 13:55:05,020 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:108 [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2023-02-14 13:55:05,169 INFO c.n.d.p.DiscoveryJerseyProvider:70 [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2023-02-14 13:55:05,169 INFO c.n.d.p.DiscoveryJerseyProvider:71 [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2023-02-14 13:55:05,220 INFO c.n.d.p.DiscoveryJerseyProvider:80 [restartedMain] Using XML encoding codec XStreamXml
+2023-02-14 13:55:05,220 INFO c.n.d.p.DiscoveryJerseyProvider:81 [restartedMain] Using XML decoding codec XStreamXml
+2023-02-14 13:55:05,277 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [restartedMain] Resolving eureka endpoints via configuration
+2023-02-14 13:55:05,311 INFO c.n.d.InstanceInfoReplicator:60 [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-14 13:55:05,477 INFO o.s.b.StartupInfoLogger:61 [restartedMain] Started GatewayApplication in 4.899 seconds (JVM running for 5.228)
+2023-02-14 14:00:05,285 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-02-14 14:05:33,758 INFO o.s.b.SpringApplication:651 [restartedMain] No active profile set, falling back to default profiles: default
+2023-02-14 14:05:34,196 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2023-02-14 14:05:34,201 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2023-02-14 14:05:34,680 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 14:05:34,680 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 14:05:34,683 INFO c.n.c.DynamicPropertyFactory:281 [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@19d60ca4
+2023-02-14 14:05:34,720 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:220 [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-14 14:05:34,972 INFO o.h.j.i.u.LogHelper:31 [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-14 14:05:34,992 INFO o.h.Version:44 [task-1] HHH000412: Hibernate ORM core version 5.4.20.Final
+2023-02-14 14:05:35,037 INFO o.h.a.c.r.j.JavaReflectionManager:49 [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-02-14 14:05:35,079 INFO o.h.d.Dialect:170 [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-14 14:05:35,326 INFO o.h.e.t.j.p.i.JtaPlatformInitiator:52 [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-14 14:05:35,453 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 14:05:35,453 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 14:05:35,883 WARN o.s.b.d.a.OptionalLiveReloadServer:61 [restartedMain] Unable to start LiveReload server
+2023-02-14 14:05:35,893 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:108 [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2023-02-14 14:05:36,054 INFO c.n.d.p.DiscoveryJerseyProvider:70 [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2023-02-14 14:05:36,054 INFO c.n.d.p.DiscoveryJerseyProvider:71 [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2023-02-14 14:05:36,103 INFO c.n.d.p.DiscoveryJerseyProvider:80 [restartedMain] Using XML encoding codec XStreamXml
+2023-02-14 14:05:36,104 INFO c.n.d.p.DiscoveryJerseyProvider:81 [restartedMain] Using XML decoding codec XStreamXml
+2023-02-14 14:05:36,162 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [restartedMain] Resolving eureka endpoints via configuration
+2023-02-14 14:05:36,273 INFO c.n.d.InstanceInfoReplicator:60 [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-14 14:05:36,379 INFO o.s.b.StartupInfoLogger:61 [restartedMain] Started GatewayApplication in 3.274 seconds (JVM running for 3.616)
+2023-02-14 14:10:36,171 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
