@@ -1,0 +1,51 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: eureka-gateway
+  datasource:
+    url: jdbc:postgresql://10.1.20.169:5432/intern_2022
+    username: postgres
+    password: Tdt@6868
+  redis:
+    host: 10.1.20.169
+    port: 6379
+    prefix-key: 'intern:'
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${eureka_url:http://127.0.0.1:8761/eureka}
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+
+ribbon:
+  ReadTimeout: 60000 # ms
+  ConnectTimeout: 60000 # ms
+  eureka:
+    enabled: true
+
+zuul:
+  ignored-services: "*"
+  routes:
+    image-service:
+      path: /image/**
+      service-id: image-service
+    music-service:
+      path: /music/**
+      service-id: music-service
+    employee-service:
+      path: /employee/**
+      service-id: employee-service
+    authenticate-service:
+      path: /auth/**
+      service-id: authenticate-service
+
+app:
+  security:
+    key-secret: INTERN1HIEU
+    expiration-token: 900000 # 15 minutes

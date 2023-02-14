@@ -1,0 +1,48 @@
+2023-02-14 13:18:13,479 INFO o.s.b.SpringApplication:651 [restartedMain] No active profile set, falling back to default profiles: default
+2023-02-14 13:18:13,960 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:18:13,967 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:18:14,428 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:18:14,428 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:18:14,431 INFO c.n.c.DynamicPropertyFactory:281 [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@12d57194
+2023-02-14 13:18:14,468 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:220 [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-14 13:18:14,707 INFO o.h.j.i.u.LogHelper:31 [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-14 13:18:14,733 INFO o.h.Version:44 [task-1] HHH000412: Hibernate ORM core version 5.4.20.Final
+2023-02-14 13:18:14,793 INFO o.h.a.c.r.j.JavaReflectionManager:49 [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-02-14 13:18:14,840 INFO o.h.d.Dialect:170 [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-14 13:18:15,011 INFO o.h.e.t.j.p.i.JtaPlatformInitiator:52 [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-14 13:18:15,143 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:18:15,144 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:18:15,622 WARN o.s.b.d.a.OptionalLiveReloadServer:61 [restartedMain] Unable to start LiveReload server
+2023-02-14 13:18:15,632 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:108 [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2023-02-14 13:18:15,793 INFO c.n.d.p.DiscoveryJerseyProvider:70 [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2023-02-14 13:18:15,793 INFO c.n.d.p.DiscoveryJerseyProvider:71 [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2023-02-14 13:18:15,850 INFO c.n.d.p.DiscoveryJerseyProvider:80 [restartedMain] Using XML encoding codec XStreamXml
+2023-02-14 13:18:15,850 INFO c.n.d.p.DiscoveryJerseyProvider:81 [restartedMain] Using XML decoding codec XStreamXml
+2023-02-14 13:18:15,919 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [restartedMain] Resolving eureka endpoints via configuration
+2023-02-14 13:18:15,985 INFO c.n.d.InstanceInfoReplicator:60 [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-14 13:18:16,077 INFO o.s.b.StartupInfoLogger:61 [restartedMain] Started GatewayApplication in 3.082 seconds (JVM running for 3.41)
+2023-02-14 13:23:15,927 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-02-14 13:28:15,929 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-02-14 13:28:22,464 INFO o.s.b.SpringApplication:651 [restartedMain] No active profile set, falling back to default profiles: default
+2023-02-14 13:28:22,913 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:28:22,918 WARN o.s.b.a.e.EndpointId:155 [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2023-02-14 13:28:23,369 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:28:23,369 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:28:23,371 INFO c.n.c.DynamicPropertyFactory:281 [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4ccc1357
+2023-02-14 13:28:23,408 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:220 [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-14 13:28:23,651 INFO o.h.j.i.u.LogHelper:31 [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-14 13:28:23,671 INFO o.h.Version:44 [task-1] HHH000412: Hibernate ORM core version 5.4.20.Final
+2023-02-14 13:28:23,716 INFO o.h.a.c.r.j.JavaReflectionManager:49 [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-02-14 13:28:23,759 INFO o.h.d.Dialect:170 [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-02-14 13:28:24,100 INFO o.h.e.t.j.p.i.JtaPlatformInitiator:52 [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-14 13:28:24,122 WARN c.n.c.s.URLConfigurationSource:126 [restartedMain] No URLs will be polled as dynamic configuration sources.
+2023-02-14 13:28:24,122 INFO c.n.c.s.URLConfigurationSource:127 [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-02-14 13:28:24,645 WARN o.s.b.d.a.OptionalLiveReloadServer:61 [restartedMain] Unable to start LiveReload server
+2023-02-14 13:28:24,656 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:108 [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2023-02-14 13:28:24,817 INFO c.n.d.p.DiscoveryJerseyProvider:70 [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2023-02-14 13:28:24,818 INFO c.n.d.p.DiscoveryJerseyProvider:71 [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2023-02-14 13:28:24,879 INFO c.n.d.p.DiscoveryJerseyProvider:80 [restartedMain] Using XML encoding codec XStreamXml
+2023-02-14 13:28:24,879 INFO c.n.d.p.DiscoveryJerseyProvider:81 [restartedMain] Using XML decoding codec XStreamXml
+2023-02-14 13:28:24,947 INFO c.n.d.s.r.a.ConfigClusterResolver:43 [restartedMain] Resolving eureka endpoints via configuration
+2023-02-14 13:28:25,003 INFO c.n.d.InstanceInfoReplicator:60 [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-14 13:28:25,137 INFO o.s.b.StartupInfoLogger:61 [restartedMain] Started GatewayApplication in 3.223 seconds (JVM running for 3.581)

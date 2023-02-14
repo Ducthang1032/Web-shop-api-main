@@ -18,6 +18,7 @@
 
     <modules>
         <module>ndt-registry</module>
+        <module>ndt-gateway</module>
     </modules>
 
     <dependencies>
