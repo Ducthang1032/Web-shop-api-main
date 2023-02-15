@@ -85,6 +85,7 @@ public class AuthenticFilter extends OncePerRequestFilter {
             }
             return;
         }
+
         filterChain.doFilter(httpServletRequest, httpServletResponse);
     }
 }
