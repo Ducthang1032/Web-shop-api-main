@@ -46,4 +46,18 @@ zuul:
 app:
   security:
     key-secret: BB8D76746D8586359AB25E18D5EFB
-    expiration-token: 900000 # 15 minutes
+    expiration-token: 432000000 # ms  : 5 days
+  cors:
+    allowed-origins: '*'
+    allowed-methods: '*'
+    allowed-headers: '*'
+    exposed-headers: 'Authorization,Link,X-Total-Count'
+    allow-credentials: true
+    max-age: 1800
+  expiration-time-spamming: 1 # s: 1s
+  number-of-sent-request: 50
+  check-spamming-request:
+    enable: false
+    max-request: 5
+    time-for-max-request: 1 #s: 1s
+    expiration-time-spamming: 1800 #s: 3600s

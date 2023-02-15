@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d002d730-b93c-47d0-85a9-bfab189061a8" name="Changes" comment="Add module gateway Eureka client">
-      <change afterPath="$PROJECT_DIR$/ndt-registry/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/config/BucketConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/config/GatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/errors/ExceptionTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/errors/SpammingRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/errors/TokenInvalidException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ndt-gateway/GatewayLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/GatewayLog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ndt-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ndt-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-registry/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ndt-registry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-registry/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/config/FilterConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/config/FilterConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/config/GatewayConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/dto/TokenInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/dto/TokenInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/filter/AuthenticFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/filter/AuthenticFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/filter/PostRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/filter/PostRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/example/gateway/filter/PreRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/filter/PreRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ndt-gateway/src/test/java/com/example/gateway/GatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ndt-gateway/src/test/java/com/web/shop/api/gateway/GatewayApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +34,19 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="80182945-4e21-405e-8a2a-cfffd7251c2b" />
+        <option name="url" value="https://github.com/Ducthang1032/Web-shop-api-main.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,7 +77,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/eco0682-thangnd/Desktop/Web-shop-api-main/ndt-registry/src/main/resources",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/home/eco0682-thangnd/Desktop/Web-shop-api-main/ndt-common",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,13 +87,18 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "a9205dcfd4a6f7c2cbe8be01566ff84a",
+    "spring.configuration.checksum": "3e21ab62fb17400301d9f0156b6c3031",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ndt-common" />
+      <recent name="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway" />
       <recent name="$PROJECT_DIR$/ndt-registry/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.web.shop.api.gateway.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -85,6 +118,13 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="Web-shop-api-main" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.web.shop.api.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,6 +166,7 @@
       <workItem from="1676340377645" duration="1658000" />
       <workItem from="1676343049496" duration="654000" />
       <workItem from="1676343744466" duration="2436000" />
+      <workItem from="1676425426862" duration="2427000" />
     </task>
     <task id="LOCAL-00001" summary="Add maven">
       <created>1676343168923</created>
@@ -169,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676358748292</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add module gateway Eureka client">
+      <created>1676360401167</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676360401167</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
