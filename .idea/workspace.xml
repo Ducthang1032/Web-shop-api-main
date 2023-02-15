@@ -6,7 +6,141 @@
   <component name="ChangeListManager">
     <list default="true" id="d002d730-b93c-47d0-85a9-bfab189061a8" name="Changes" comment="Add module gateway Eureka client">
       <change afterPath="$PROJECT_DIR$/ndt-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ndt-common/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/censored/CensoredTextFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/censored/profanity_list.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/AuthoritiesConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/CQLmsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/CSVConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/ChatParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/CommonConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/DateTimeFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/EmailConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/IVSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/NotificationConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/NotificationPoem3Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/NumberConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/OTPConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/Poem3Parameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/RegexConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/TopicConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/constants/VideoConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/dto/MetaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/dto/PagingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/dto/RefreshTokenInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/dto/ResponseMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/dto/ResponseMetaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/dto/TokenInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/dto/UserLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionAdminRedeemVoucher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionConfigName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionNameScoreEarn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionPinGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionPointHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionSocial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionToPostChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionToUserChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActionWarnOrBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActivityLogTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ActivityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/AdminUpdateStatusPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ApproveFriendRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ApproveMemberType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ApprovePendingPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/CQGender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/CQLmsLoginType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/CQLmsModuleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ChannelTypeSPhoton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ChatNotiOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ChatPostType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/CommentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/FavoriteAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/FollowingType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/FriendType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/GroupPrivacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/GroupRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/GroupStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/GroupType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/HideAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/JoinTypeGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/LMSInvoiceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ListCourseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/LoginType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/MailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ManagementModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/MemberGroupStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/MemberRequestNoti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/MemberStatusActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/MetaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/MuteTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/MyCourseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/NotiAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/NotificationPlatform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/NotificationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/NotificationTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PermissionSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PoemUserCategoryCd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PostApprovalNoti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PostLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PostNoti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PostOnWallPrivacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PostPrivacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PostStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/PostType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ReactionUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/Relation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/RelationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ReportCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ReportLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/RequestType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ResizeResolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/ResourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/RightToPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/RoleAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SaveLaterAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchAccountStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchGroupPrivacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchGroupStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchGroupVisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchPeopleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchPostStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchPostType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchResourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SearchRoleAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SendEmailOtpType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SortType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SortTypeCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/SubSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/TagLinkPreviewType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/Theme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/UpdateReportedPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/UpdateUserRoleAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/UploadAvatarOrCoverPhotoType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/UserPrivacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/VideoFormats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/Visible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/enums/VoucherType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/errors/DataInvalidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/i18n/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/i18n/messages_chinese.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/i18n/messages_thai.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/i18n/messages_turkish.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/AsyncUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/AuthorizationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/DateTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/EmailUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/FilesUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/NumberUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/ObjectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/PasswordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/PhoneUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/RedisKeyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/SecurityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ndt-common/src/main/java/common/utils/TextUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/config/BucketConfiguration.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/config/GatewayConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway/errors/ExceptionTranslator.java" afterDir="false" />
@@ -78,7 +212,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/home/eco0682-thangnd/Desktop/Web-shop-api-main/ndt-common",
+    "last_opened_file_path": "/home/eco0682-thangnd/Desktop/Web-shop-api-main/ndt-common/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +227,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ndt-common/src/main/java" />
+      <recent name="$PROJECT_DIR$/ndt-common/src" />
       <recent name="$PROJECT_DIR$/ndt-common" />
       <recent name="$PROJECT_DIR$/ndt-gateway/src/main/java/com/web/shop/api/gateway" />
       <recent name="$PROJECT_DIR$/ndt-registry/src/main/resources" />
@@ -166,7 +302,7 @@
       <workItem from="1676340377645" duration="1658000" />
       <workItem from="1676343049496" duration="654000" />
       <workItem from="1676343744466" duration="2436000" />
-      <workItem from="1676425426862" duration="2427000" />
+      <workItem from="1676425426862" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="Add maven">
       <created>1676343168923</created>
@@ -217,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676360401167</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add module gateway Eureka client">
+      <created>1676431983636</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676431983636</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
