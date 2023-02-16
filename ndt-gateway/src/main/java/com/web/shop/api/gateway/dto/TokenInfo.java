@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TokenInfo {
+
     @JsonProperty("id")
     private String Id;
 

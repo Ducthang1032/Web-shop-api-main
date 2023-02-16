@@ -1,7 +1,6 @@
 package com.web.shop.api.gateway.config;
 
 import com.web.shop.api.gateway.filter.AuthenticFilter;
-import io.github.bucket4j.Bucket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -21,9 +20,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
-    @Autowired
-    private Bucket bucket;
-
     public void configure(HttpSecurity httpSecurity) throws Exception {
 
         httpSecurity
@@ -36,7 +32,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint((httpServletRequest, httpServletResponse, e) ->
                         httpServletResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized"))
                 .and()
-                .addFilterAfter(new AuthenticFilter(gatewayConfig, redisTemplate, bucket), UsernamePasswordAuthenticationFilter.class)
+                .addFilterAfter(new AuthenticFilter(gatewayConfig, redisTemplate), UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers("/auth/login").permitAll()
                 .anyRequest().authenticated();

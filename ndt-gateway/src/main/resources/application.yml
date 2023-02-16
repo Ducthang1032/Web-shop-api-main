@@ -5,13 +5,14 @@ spring:
   application:
     name: eureka-gateway
   datasource:
-    url: jdbc:postgresql://10.1.20.169:5432/intern_2022
-    username: postgres
-    password: Tdt@6868
+    url: jdbc:mysql://localhost:3306/store
+    driverClassName: org.postgresql.Driver
+    username: root
+    password: 123123Aa@
   redis:
-    host: redis-15714.c290.ap-northeast-1-2.ec2.cloud.redislabs.com
-    port: 15714
-    password: usyEK86FiprLOYwtzeNgW405iiY8AK68
+    host: redis-17513.c294.ap-northeast-1-2.ec2.cloud.redislabs.com
+    port: 17513
+    password: rvPHMCGdR5fVup0iZGl0fSqKWwfCHYhH
     prefix-key: 'ndt:'
 
 eureka:
@@ -54,8 +55,8 @@ app:
     exposed-headers: 'Authorization,Link,X-Total-Count'
     allow-credentials: true
     max-age: 1800
-  expiration-time-spamming: 1 # s: 1s
-  number-of-sent-request: 50
+  # s: 1s
+
   check-spamming-request:
     enable: false
     max-request: 5

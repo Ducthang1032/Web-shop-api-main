@@ -3,15 +3,12 @@ package com.web.shop.api.gateway.filter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.web.shop.api.gateway.config.GatewayConfig;
 import com.web.shop.api.gateway.dto.TokenInfo;
-import com.web.shop.api.gateway.errors.SpammingRequestException;
-import io.github.bucket4j.Bucket;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.security.SecurityUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpStatus;
@@ -31,19 +28,11 @@ public class AuthenticFilter extends OncePerRequestFilter {
     private final GatewayConfig gatewayConfig;
     private final RedisTemplate<String, String> redisTemplate;
 
-    private final Bucket bucket;
-
     @SneakyThrows
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse httpServletResponse,
+    protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
                                     FilterChain filterChain) {
         try {
-            if (!bucket.tryConsumeAndReturnRemaining(1).isConsumed()) {
-                log.warn("STOPPED request method = {}, URI = {}, IP = {}", request.getMethod(),
-                        request.getRequestURI(), SecurityUtil.getClientIP(request));
-                throw new SpammingRequestException(MetaData.SEND_REQUEST_TOO_MANY_TIMES.getMessage());
-            }
-
             String tokenHeader = httpServletRequest.getHeader("Authorization");
 
             // validate header
